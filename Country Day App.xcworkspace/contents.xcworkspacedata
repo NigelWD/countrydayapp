@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CCDSLogo.jpeg">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Downloads/imageSwitcher.png">
+   </FileRef>
+   <FileRef
+      location = "group:Country Day App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

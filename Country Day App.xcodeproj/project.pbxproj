@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D36118584092EB5771D65B /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0493BB56B55C3D5B33FEECC3 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		33BD00988C99CDAE07AE5287 /* Pods_Country_Day_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDAE755E82CE9075B64206 /* Pods_Country_Day_App.framework */; };
+		A622C1012010EAFB00CA4DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622C1002010EAFB00CA4DA4 /* AppDelegate.swift */; };
+		A622C1082010EAFB00CA4DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622C1062010EAFB00CA4DA4 /* Main.storyboard */; };
+		A622C10A2010EAFB00CA4DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A622C1092010EAFB00CA4DA4 /* Assets.xcassets */; };
+		A622C10D2010EAFB00CA4DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622C10B2010EAFB00CA4DA4 /* LaunchScreen.storyboard */; };
+		A622C1352010FEA000CA4DA4 /* LogoMin.png in Resources */ = {isa = PBXBuildFile; fileRef = A622C1342010FEA000CA4DA4 /* LogoMin.png */; };
+		A63A09072011957700383DD8 /* CCDSlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = A63A09062011957700383DD8 /* CCDSlogo2.png */; };
+		A64445F22020370F006C09C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A64445F12020370F006C09C3 /* GoogleService-Info.plist */; };
+		A697EC662193BE2C000B9DC5 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = A697EC652193BE2C000B9DC5 /* loading.gif */; };
+		A697F51F21940416000B9DC5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F51D21940415000B9DC5 /* SplashViewController.swift */; };
+		A697F52021940416000B9DC5 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F51E21940415000B9DC5 /* global.swift */; };
+		A697F5232194043B000B9DC5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F5212194043B000B9DC5 /* TabViewController.swift */; };
+		A697F5242194043B000B9DC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F5222194043B000B9DC5 /* LoginViewController.swift */; };
+		A697F52921940452000B9DC5 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F52521940452000B9DC5 /* MessagesViewController.swift */; };
+		A697F52B21940452000B9DC5 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F52721940452000B9DC5 /* UIImage+Gif.swift */; };
+		A697F52C21940452000B9DC5 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697F52821940452000B9DC5 /* SportsViewController.swift */; };
+		A697F52E219404B7000B9DC5 /* Fortnite.png in Resources */ = {isa = PBXBuildFile; fileRef = A697F52D219404B7000B9DC5 /* Fortnite.png */; };
+		A6A47F4F201D3BA200B84962 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A47F4E201D3BA200B84962 /* AccountViewController.swift */; };
+		A6C559E42197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6C559DD2197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6C559EB2197CEC600DBDCCA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C559EA2197CEC600DBDCCA /* NotificationService.swift */; };
+		A6E3EF62219517F500D36FDC /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EF61219517F500D36FDC /* ClubsViewController.swift */; };
+		A6E3EF6421951AB100D36FDC /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EF6321951AB100D36FDC /* CalendarViewController.swift */; };
+		A6E3EF6721951EE600D36FDC /* NetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EF6621951EE600D36FDC /* NetViewController.swift */; };
+		A6E54342201AE4E6002CA8B3 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E54341201AE4E5002CA8B3 /* CycleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6C559E22197CEA100DBDCCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622C0F52010EAFB00CA4DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6C559DC2197CEA100DBDCCA;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6C559C72197CD8B00DBDCCA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6C559E42197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0493BB56B55C3D5B33FEECC3 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB583E4F7410B66BB5A5B5F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		47C36D1BA24B4D288F964F9A /* Pods-Country Day AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day AppTests/Pods-Country Day AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DCDAE755E82CE9075B64206 /* Pods_Country_Day_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Country_Day_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F939A061BF48710A404C73 /* Pods-Country Day AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day AppUITests/Pods-Country Day AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B2DCD4811A50F9372EF16D0 /* Pods-Country Day App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App.debug.xcconfig"; sourceTree = "<group>"; };
+		9CB6542B7793583A63241CBD /* Pods-Country Day AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day AppUITests/Pods-Country Day AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A622C0FD2010EAFB00CA4DA4 /* Country Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622C1002010EAFB00CA4DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A622C1072010EAFB00CA4DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A622C1092010EAFB00CA4DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A622C10C2010EAFB00CA4DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A622C10E2010EAFB00CA4DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A622C1342010FEA000CA4DA4 /* LogoMin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoMin.png; sourceTree = SOURCE_ROOT; };
+		A63A09062011957700383DD8 /* CCDSlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCDSlogo2.png; sourceTree = SOURCE_ROOT; };
+		A64445F12020370F006C09C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A64BC72B2012D6FE00127B37 /* Country Day App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Country Day App-Bridging-Header.h"; sourceTree = "<group>"; };
+		A697EC652193BE2C000B9DC5 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = SOURCE_ROOT; };
+		A697F51D21940415000B9DC5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A697F51E21940415000B9DC5 /* global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		A697F5212194043B000B9DC5 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		A697F5222194043B000B9DC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A697F52521940452000B9DC5 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A697F52721940452000B9DC5 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		A697F52821940452000B9DC5 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		A697F52D219404B7000B9DC5 /* Fortnite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fortnite.png; sourceTree = SOURCE_ROOT; };
+		A6A47F4E201D3BA200B84962 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A6C559DD2197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C559E12197CEA100DBDCCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C559EA2197CEC600DBDCCA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A6E3EF61219517F500D36FDC /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
+		A6E3EF6321951AB100D36FDC /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		A6E3EF6621951EE600D36FDC /* NetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetViewController.swift; sourceTree = "<group>"; };
+		A6E54341201AE4E5002CA8B3 /* CycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleViewController.swift; sourceTree = "<group>"; };
+		A6F598CF218BF731002E0A52 /* Country Day.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Country Day.entitlements"; sourceTree = "<group>"; };
+		B1E0E44180D531416061ACF0 /* Pods-Country Day App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App.release.xcconfig"; sourceTree = "<group>"; };
+		C8C4AD133F11D1D10F72D1D0 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		EA25ED0CB456DA92C1C293CA /* Pods-Country Day AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country Day AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Country Day AppTests/Pods-Country Day AppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A622C0FA2010EAFB00CA4DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BD00988C99CDAE07AE5287 /* Pods_Country_Day_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C559DA2197CEA100DBDCCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D36118584092EB5771D65B /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A29DA792024A2C400E8AAF1 /* OptionsPage */ = {
+			isa = PBXGroup;
+			children = (
+				A6A47F4E201D3BA200B84962 /* AccountViewController.swift */,
+				A6E3EF6621951EE600D36FDC /* NetViewController.swift */,
+			);
+			name = OptionsPage;
+			sourceTree = "<group>";
+		};
+		3A33011F5CDB34A5C6A016AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDAE755E82CE9075B64206 /* Pods_Country_Day_App.framework */,
+				0493BB56B55C3D5B33FEECC3 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A622C0F42010EAFB00CA4DA4 = {
+			isa = PBXGroup;
+			children = (
+				A622C0FF2010EAFB00CA4DA4 /* Country Day App */,
+				A6C559DE2197CEA100DBDCCA /* OneSignalNotificationServiceExtension */,
+				A622C0FE2010EAFB00CA4DA4 /* Products */,
+				BEDD3F9AA4B653802580D908 /* Pods */,
+				3A33011F5CDB34A5C6A016AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A622C0FE2010EAFB00CA4DA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A622C0FD2010EAFB00CA4DA4 /* Country Day.app */,
+				A6C559DD2197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A622C0FF2010EAFB00CA4DA4 /* Country Day App */ = {
+			isa = PBXGroup;
+			children = (
+				A6F598CF218BF731002E0A52 /* Country Day.entitlements */,
+				A622C1002010EAFB00CA4DA4 /* AppDelegate.swift */,
+				A697F51E21940415000B9DC5 /* global.swift */,
+				A697F51D21940415000B9DC5 /* SplashViewController.swift */,
+				A697EC652193BE2C000B9DC5 /* loading.gif */,
+				A697F52D219404B7000B9DC5 /* Fortnite.png */,
+				A6430D33201BF0B700E55EB7 /* Controllers */,
+				1A29DA792024A2C400E8AAF1 /* OptionsPage */,
+				A622C1062010EAFB00CA4DA4 /* Main.storyboard */,
+				A622C10B2010EAFB00CA4DA4 /* LaunchScreen.storyboard */,
+				A622C1092010EAFB00CA4DA4 /* Assets.xcassets */,
+				A63A09062011957700383DD8 /* CCDSlogo2.png */,
+				A622C1342010FEA000CA4DA4 /* LogoMin.png */,
+				A622C10E2010EAFB00CA4DA4 /* Info.plist */,
+				A64445F12020370F006C09C3 /* GoogleService-Info.plist */,
+				A64BC72B2012D6FE00127B37 /* Country Day App-Bridging-Header.h */,
+			);
+			path = "Country Day App";
+			sourceTree = "<group>";
+		};
+		A6430D33201BF0B700E55EB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A697F5212194043B000B9DC5 /* TabViewController.swift */,
+				A697F5222194043B000B9DC5 /* LoginViewController.swift */,
+				A6E54341201AE4E5002CA8B3 /* CycleViewController.swift */,
+				A697F52521940452000B9DC5 /* MessagesViewController.swift */,
+				A697F52821940452000B9DC5 /* SportsViewController.swift */,
+				A6E3EF6321951AB100D36FDC /* CalendarViewController.swift */,
+				A6E3EF61219517F500D36FDC /* ClubsViewController.swift */,
+				A697F52721940452000B9DC5 /* UIImage+Gif.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A6C559DE2197CEA100DBDCCA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A6C559EA2197CEC600DBDCCA /* NotificationService.swift */,
+				A6C559E12197CEA100DBDCCA /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		BEDD3F9AA4B653802580D908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DCD4811A50F9372EF16D0 /* Pods-Country Day App.debug.xcconfig */,
+				B1E0E44180D531416061ACF0 /* Pods-Country Day App.release.xcconfig */,
+				47C36D1BA24B4D288F964F9A /* Pods-Country Day AppTests.debug.xcconfig */,
+				EA25ED0CB456DA92C1C293CA /* Pods-Country Day AppTests.release.xcconfig */,
+				9CB6542B7793583A63241CBD /* Pods-Country Day AppUITests.debug.xcconfig */,
+				80F939A061BF48710A404C73 /* Pods-Country Day AppUITests.release.xcconfig */,
+				C8C4AD133F11D1D10F72D1D0 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				1BB583E4F7410B66BB5A5B5F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A622C0FC2010EAFB00CA4DA4 /* Country Day App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622C1272010EAFB00CA4DA4 /* Build configuration list for PBXNativeTarget "Country Day App" */;
+			buildPhases = (
+				2885B4E4BFB47FB8EA8A4CFB /* [CP] Check Pods Manifest.lock */,
+				A622C0F92010EAFB00CA4DA4 /* Sources */,
+				A622C0FA2010EAFB00CA4DA4 /* Frameworks */,
+				A622C0FB2010EAFB00CA4DA4 /* Resources */,
+				CE8BABD3C59F8B1E46AFADAD /* [CP] Embed Pods Frameworks */,
+				38CC8FF10E62447490E2EAC9 /* [CP] Copy Pods Resources */,
+				A6C559C72197CD8B00DBDCCA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6C559E32197CEA100DBDCCA /* PBXTargetDependency */,
+			);
+			name = "Country Day App";
+			productName = "Country Day App";
+			productReference = A622C0FD2010EAFB00CA4DA4 /* Country Day.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6C559DC2197CEA100DBDCCA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C559E52197CEA100DBDCCA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				88D6CDDD758EC334A3A15E9E /* [CP] Check Pods Manifest.lock */,
+				A6C559D92197CEA100DBDCCA /* Sources */,
+				A6C559DA2197CEA100DBDCCA /* Frameworks */,
+				A6C559DB2197CEA100DBDCCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = A6C559DD2197CEA100DBDCCA /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A622C0F52010EAFB00CA4DA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Solstice;
+				TargetAttributes = {
+					A622C0FC2010EAFB00CA4DA4 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					A6C559DC2197CEA100DBDCCA = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A622C0F82010EAFB00CA4DA4 /* Build configuration list for PBXProject "Country Day App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A622C0F42010EAFB00CA4DA4;
+			productRefGroup = A622C0FE2010EAFB00CA4DA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A622C0FC2010EAFB00CA4DA4 /* Country Day App */,
+				A6C559DC2197CEA100DBDCCA /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A622C0FB2010EAFB00CA4DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A622C10D2010EAFB00CA4DA4 /* LaunchScreen.storyboard in Resources */,
+				A622C10A2010EAFB00CA4DA4 /* Assets.xcassets in Resources */,
+				A697F52E219404B7000B9DC5 /* Fortnite.png in Resources */,
+				A63A09072011957700383DD8 /* CCDSlogo2.png in Resources */,
+				A622C1082010EAFB00CA4DA4 /* Main.storyboard in Resources */,
+				A697EC662193BE2C000B9DC5 /* loading.gif in Resources */,
+				A622C1352010FEA000CA4DA4 /* LogoMin.png in Resources */,
+				A64445F22020370F006C09C3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C559DB2197CEA100DBDCCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2885B4E4BFB47FB8EA8A4CFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Country Day App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38CC8FF10E62447490E2EAC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D6CDDD758EC334A3A15E9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8BABD3C59F8B1E46AFADAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Country Day App/Pods-Country Day App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A622C0F92010EAFB00CA4DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E3EF6421951AB100D36FDC /* CalendarViewController.swift in Sources */,
+				A6E54342201AE4E6002CA8B3 /* CycleViewController.swift in Sources */,
+				A697F51F21940416000B9DC5 /* SplashViewController.swift in Sources */,
+				A697F5232194043B000B9DC5 /* TabViewController.swift in Sources */,
+				A697F52021940416000B9DC5 /* global.swift in Sources */,
+				A6E3EF6721951EE600D36FDC /* NetViewController.swift in Sources */,
+				A6E3EF62219517F500D36FDC /* ClubsViewController.swift in Sources */,
+				A697F52C21940452000B9DC5 /* SportsViewController.swift in Sources */,
+				A697F52921940452000B9DC5 /* MessagesViewController.swift in Sources */,
+				A622C1012010EAFB00CA4DA4 /* AppDelegate.swift in Sources */,
+				A697F5242194043B000B9DC5 /* LoginViewController.swift in Sources */,
+				A697F52B21940452000B9DC5 /* UIImage+Gif.swift in Sources */,
+				A6A47F4F201D3BA200B84962 /* AccountViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C559D92197CEA100DBDCCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C559EB2197CEC600DBDCCA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6C559E32197CEA100DBDCCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6C559DC2197CEA100DBDCCA /* OneSignalNotificationServiceExtension */;
+			targetProxy = A6C559E22197CEA100DBDCCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A622C1062010EAFB00CA4DA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A622C1072010EAFB00CA4DA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A622C10B2010EAFB00CA4DA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A622C10C2010EAFB00CA4DA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A622C1252010EAFB00CA4DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A622C1262010EAFB00CA4DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A622C1282010EAFB00CA4DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2DCD4811A50F9372EF16D0 /* Pods-Country Day App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Country Day App/Country Day.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W58SM5V7JL;
+				INFOPLIST_FILE = "Country Day App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "solstice.Country-Day-App";
+				PRODUCT_NAME = "Country Day";
+				SWIFT_OBJC_BRIDGING_HEADER = "Country Day App/Country Day App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A622C1292010EAFB00CA4DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E0E44180D531416061ACF0 /* Pods-Country Day App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Country Day App/Country Day.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W58SM5V7JL;
+				INFOPLIST_FILE = "Country Day App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "solstice.Country-Day-App";
+				PRODUCT_NAME = "Country Day";
+				SWIFT_OBJC_BRIDGING_HEADER = "Country Day App/Country Day App-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A6C559E62197CEA100DBDCCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C4AD133F11D1D10F72D1D0 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W58SM5V7JL;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "solstice.Country-Day-App.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6C559E72197CEA100DBDCCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB583E4F7410B66BB5A5B5F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W58SM5V7JL;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "solstice.Country-Day-App.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A622C0F82010EAFB00CA4DA4 /* Build configuration list for PBXProject "Country Day App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622C1252010EAFB00CA4DA4 /* Debug */,
+				A622C1262010EAFB00CA4DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622C1272010EAFB00CA4DA4 /* Build configuration list for PBXNativeTarget "Country Day App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622C1282010EAFB00CA4DA4 /* Debug */,
+				A622C1292010EAFB00CA4DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C559E52197CEA100DBDCCA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C559E62197CEA100DBDCCA /* Debug */,
+				A6C559E72197CEA100DBDCCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A622C0F52010EAFB00CA4DA4 /* Project object */;
+}

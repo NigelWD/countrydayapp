@@ -1,0 +1,6 @@
+framework module Pods_Country_Day_App {
+  umbrella header "Pods-Country Day App-umbrella.h"
+
+  export *
+  module * { export * }
+}
